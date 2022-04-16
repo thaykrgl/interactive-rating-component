@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | Interactive Rating Component</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <!-- Submit State -->
+      <div id="submit" class="submit-state">
+        <div class="star-img">
+          <img src="./images/icon-star.svg" alt="star icon">
+        </div>
+        <h3>How did we do?</h3>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+        <div class="vote-buttons">
+          <a class="vote" href="#">1</a>
+          <a class="vote" href="#">2</a>
+          <a class="vote" href="#">3</a>
+          <a class="vote" href="#">4</a>
+          <a class="vote" href="#">5</a>
+        </div>
+        <a id="submit-button" class="submit-button" href="#">Submit</a>
+      </div>
+      <!-- Thank State -->
+      <div id="thank" class="thank-state d-none">
+        <div class="back-button">
+          <a id="back-icon" href="#">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="illustration-img">
+          <img src="./images/illustration-thank-you.svg" alt="illustration image">
+        </div>
+        <p class="rating">You selected <span id="rating">4</span> out of 5</p>
+        <h3>Thank you!</h3>
+        <p class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/thaykrgl">Taha</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
