@@ -26,11 +26,14 @@ body {
 .container {
   width: 400px;
   margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .card {
   background: #1f2630;
-  margin-top: 16rem;
   padding: 2rem;
   border-radius: 20px;
   margin-bottom: 1rem;
